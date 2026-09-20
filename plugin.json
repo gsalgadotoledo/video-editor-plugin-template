@@ -1,0 +1,21 @@
+{
+  "id": "com.example.hello-world",
+  "name": "Hello World",
+  "version": "1.0.0",
+  "description": "A minimal JavaScript plugin for Video Batch.",
+  "engine": ">=2.0.0",
+  "runtime": {
+    "type": "node",
+    "entry": "src/index.js"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "name": "hello.greet",
+        "description": "Return a greeting for the supplied name."
+      }
+    ]
+  },
+  "activationEvents": ["onCommand:hello.greet"],
+  "tags": ["example", "javascript"]
+}
